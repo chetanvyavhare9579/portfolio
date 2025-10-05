@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | EduSphere</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="book" class="text-primary h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-900">EduSphere</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Dashboard
+                        </a>
+                        <a href="activities.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Activities
+                        </a>
+                        <a href="portfolio.html" class="border-primary text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Portfolio
+                        </a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none">
+                        <i data-feather="bell"></i>
+                    </button>
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button" class="bg-white rounded-full flex text-sm focus:outline-none" id="user-menu">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-8 w-8 rounded-full" src="https://cdn-icons-png.flaticon.com/512/11919/11919842.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900">Your Digital Portfolio</h1>
+                <p class="text-gray-600">Verified academic and extracurricular achievements</p>
+            </div>
+            <div class="flex space-x-3">
+                <button class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 flex items-center">
+                    <i data-feather="share-2" class="mr-2"></i> Share
+                </button>
+                <button class="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-dark flex items-center">
+                    <i data-feather="download" class="mr-2"></i> Download PDF
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-lg overflow-hidden mb-6">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <div class="flex items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/11919/11919842.png" alt="" id="profilesetup" width="70">
+                    <div class="ml-4">
+                        <h2 class="text-xl font-bold text-gray-900">Priya Sharma</h2>
+                        <p class="text-gray-600">Computer Science Engineering | 2024 Batch</p>
+                        <div class="flex items-center mt-1 text-sm text-gray-500">
+                            <i data-feather="map-pin" class="h-4 w-4 mr-1"></i>
+                            <span>Delhi Technological University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 py-4 border-b border-gray-200">
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">CGPA</p>
+                        <p class="text-xl font-semibold text-gray-900">8.7 / 10.0</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">Credits Earned</p>
+                        <p class="text-xl font-semibold text-gray-900">145 / 190</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">Verified Activities</p>
+                        <p class="text-xl font-semibold text-gray-900">24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Academic Summary -->
+            <div class="lg:col-span-2 bg-white shadow rounded-lg overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Academic Summary</h2>
+                </div>
+                <div class="px-6 py-4">
+                    <div class="mb-6">
+                        <h3 class="text-base font-medium text-gray-900 mb-2">Semester-wise Performance</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 1</span>
+                                <span class="text-sm font-medium text-gray-900">7.8 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 78%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 2</span>
+                                <span class="text-sm font-medium text-gray-900">8.2 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 82%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 3</span>
+                                <span class="text-sm font-medium text-gray-900">8.5 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 4</span>
+                                <span class="text-sm font-medium text-gray-900">8.7 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 87%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 5</span>
+                                <span class="text-sm font-medium text-gray-900">8.9 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 89%"></div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-600">Semester 6</span>
+                                <span class="text-sm font-medium text-gray-900">9.0 SGPA</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-base font-medium text-gray-900 mb-2">Key Coursework</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Data Structures</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Algorithms</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Machine Learning</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Database Systems</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Computer Networks</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Operating Systems</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Cloud Computing</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Artificial Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills & Competencies -->
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Skills & Competencies</h2>
+                </div>
+                <div class="px-6 py-4">
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Technical Skills</h3>
+                        <div class="space-y-2">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Python</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>Java</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>JavaScript</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>SQL</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Soft Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Leadership</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Teamwork</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Problem Solving</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Communication</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Time Management</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Tools & Technologies</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Git</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Docker</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">AWS</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">TensorFlow</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="bg-white shadow rounded-lg overflow-hidden mt-6">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h2 class="text-lg font-medium text-gray-900">Key Achievements</h2>
+            </div>
+            <div class="px-6 py-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-purple-100 text-purple-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">Google Summer Intern</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Selected among top 1% applicants nationwide for Google's prestigious summer internship program in software engineering.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-yellow-100 text-yellow-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">Hackathon Winner</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Led team to victory in Smart India Hackathon 2023 with an AI-based solution for agricultural productivity enhancement.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-green-100 text-green-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">Research Publication</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Published paper on "Optimizing Neural Networks for Edge Devices" in IEEE Transactions on Neural Networks.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-blue-100 text-blue-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">AWS Certified</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Achieved AWS Certified Solutions Architect - Associate certification with 92% score.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-red-100 text-red-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">Dean's List</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Consistently featured in Dean's List for academic excellence across 5 consecutive semesters.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-3">
+                            <div class="p-2 rounded-full bg-indigo-100 text-indigo-600">
+                                <i data-feather="award"></i>
+                            </div>
+                            <h3 class="ml-3 font-medium text-gray-900">Tech Conference Speaker</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">Invited speaker at DevFest 2023 to present on "Practical Machine Learning for Beginners".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
